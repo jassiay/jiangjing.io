@@ -20,7 +20,7 @@ function App() {
           <PrimaryCard />
           <InfoCard info="about" />
           <InfoCard info="skills" />
-          <BlankCard />
+          <BlankCard twoCol fourCol />
       </Row>
       {/* Projects Row */}
       <Row className="d-flex justify-content-center">
@@ -28,13 +28,15 @@ function App() {
           <ProjectCard proj="recreate-manhattan" />
           <ProjectCard proj="fish-pomodoro" />
           <ProjectCard proj="story-gen" />
+          <BlankCard threeCol />
+          <BlankCard threeCol />
       </Row>
       {/* Contact Row */}
       <Row className="d-flex justify-content-center">
           <SectionCard title="contact" />
           <SectionCard title="resume" />
-          <BlankCard />
-          <BlankCard />
+          <BlankCard threeCol fourCol />
+          <BlankCard fourCol />
       </Row>
       <Footer />
     </Container>

@@ -193,7 +193,6 @@ body {
     font-size: 2.5vw;
 }
 
-
 @media(min-width:1000px){
     .info-paragraph {
         font-size: 1.2vw;
@@ -208,9 +207,37 @@ body {
     .card-blank {
         display: inline-block;
     }
+
+    .hide-card {
+        display: none;
+    }
+
+    .hide-card-two-col {
+        display: none;
+    }
 }
 
-@media(min-width:1800px){
+@media(min-width:1500px){
+    .info-paragraph {
+        font-size: 0.9vw;
+    }
+
+    .card-style {
+        width: 25vw;
+        height: 25vw;
+        margin: 1rem;
+    }
+
+    .card-blank {
+        display: inline-block;
+    }
+
+    .hide-card-three-col {
+        display: none;
+    }
+}
+
+@media(min-width:2000px){
     .info-paragraph {
         font-size: 0.8vw;
     }
@@ -223,5 +250,9 @@ body {
 
     .card-blank {
         display: inline-block;
+    }
+
+    .hide-card-four-col {
+        display: none;
     }
 }
