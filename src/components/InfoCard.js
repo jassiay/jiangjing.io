@@ -9,7 +9,7 @@ function About() {
             </p>
             <p className="info-paragraph">
                 I am studying as a master's student in Computer Science at Northwestern University, Evanston, IL.
-                And I gained my bachelor’s degree at the Cooper Union, New York, NY, majored in Electrical Engineering and minored in Computer Science.
+                I gained my bachelor’s degree at the Cooper Union, New York, NY, and I majored in Electrical Engineering and minored in Computer Science.
             </p>
             <p className="info-paragraph">
                 Through my education and experience, I have gained an excellent amount of knowledge regarding software engineering.
