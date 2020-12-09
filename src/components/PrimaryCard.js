@@ -7,26 +7,19 @@ const styles = {
     nameArea: {
         backgroundColor: '#e0e0e0',
     },
-    profilePicStyle: {
-        marginTop: '4vw',
-        marginRight: '4vw',
-        float: 'right',
-        height: 150,
-        width: 150,
-        borderRadius: '50%',
-        boxShadow: '0px 10px 25px rgba(0, 0, 0, 0.5)'
+    modifyOverflow: {
+        overflow: 'visible'
     }
 };
 
 function PrimaryCard() {
     return (
-        <div className="card-style">
+        <div className="card-style" style={styles.modifyOverflow}>
             <div style={styles.nameArea}>
                 <h1>JING</h1>
                 <h1>JIANG</h1>
             </div>
-            <img style={styles.profilePicStyle} src={profilePic} alt="Profile Picture" />
-
+            <img className="profile-pic" src={profilePic} alt="Profile Picture" />
         </div>
     );
 }
