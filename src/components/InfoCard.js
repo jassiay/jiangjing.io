@@ -23,7 +23,7 @@ function About() {
 function Skills() {
     return (
         <div>
-            <h1 className="info-skill-title">ABILITIES</h1>
+            {/* <h1 className="info-skill-title">ABILITIES</h1> */}
             <h3>Programming Languages</h3>
             <p className="info-paragraph">
                 Java, Python, JavaScript/HTML/CSS,

@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../styles.css';
 
 import project1 from '../assets/project_1.png';
-import project3 from '../assets/project_3.png';
 
 const styles = {
     projNum: {
@@ -15,15 +14,15 @@ const styles = {
     abstract: {
         fontFamily: `'DM Serif Display', serif`,
     },
-    cursorStyle: {
-        cursor: 'pointer'
+    cursorDefault: {
+        cursor: 'default'
     }
 };
 
 function ProjectManhattan() {
     return (
-        <div>
-            <h3 style={styles.projNum}><span style={styles.projNumSpan}>1.Recreate-Manhattan: Reimagine a City using Deep Learning</span></h3>
+        <div onClick={()=> window.open("https://recreate-manhattan.jiangjing.io/", "_blank")}>
+            <h3 style={styles.projNum}><span>1.Recreate-Manhattan: Reimagine a City using Deep Learning</span></h3>
             <img className="project-img" src={project1} alt="Project 1" />
             <div className="overlay">
                 <h3 className="title-placeholder">1.Recreate-Manhattan: Reimagine a City using Deep Learning</h3>
@@ -48,9 +47,8 @@ function ProjectManhattan() {
 }
 
 function ProjectFishPomodoro() {
-
     return (
-        <div>
+        <div style={styles.cursorDefault}>
             <h3 style={styles.projNum}><span style={styles.projNumSpan}>2.Pomodoro App with Fish-Collecting Gamification</span></h3>
             <div className="timer-emoji">&#x23F1;
                 <p className="fish-emoji-1">&#x1F41F;</p>
@@ -76,7 +74,7 @@ function ProjectFishPomodoro() {
 
 function ProjectStoryGen() {
     return (
-        <div>
+        <div onClick={()=> window.open("https://arxiv.org/abs/2001.10980", "_blank")}>
             {/* <h3 style={styles.projNum}><span style={styles.projNumSpan}>3.</span></h3> */}
             {/* <img className="project-3-img" src={project3} alt="Project 3" /> */}
             <h3>3.Multimodal Story Generation on Plural Images</h3>
