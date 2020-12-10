@@ -3,7 +3,7 @@ import '../styles.css';
 
 function About() {
     return (
-        <div>
+        <div className="card-style">
             <p className="info-paragraph">
                 Hello! I currently live in Evanston, IL. 
             </p>
@@ -22,7 +22,7 @@ function About() {
 
 function Skills() {
     return (
-        <div>
+        <div className="card-style">
             {/* <h1 className="info-skill-title">ABILITIES</h1> */}
             <h3>Programming Languages</h3>
             <p className="info-paragraph">
@@ -47,7 +47,7 @@ function Skills() {
 
 function InfoCard({info}) {
     return (
-        <div className="card-style">
+        <div>
             {info === "about" && <About />}
             {info === "skills" && <Skills />}
         </div>

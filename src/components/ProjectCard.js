@@ -16,12 +16,15 @@ const styles = {
     },
     cursorDefault: {
         cursor: 'default'
+    },
+    modifyOverflow: {
+        overflow: 'visible'
     }
 };
 
 function ProjectManhattan() {
     return (
-        <div onClick={()=> window.open("https://recreate-manhattan.jiangjing.io/", "_blank")}>
+        <div className="card-style card-hover" onClick={()=> window.open("https://recreate-manhattan.jiangjing.io/", "_blank")}>
             <h3 style={styles.projNum}><span>1.Recreate-Manhattan: Reimagine a City using Deep Learning</span></h3>
             <img className="project-img" src={project1} alt="Project 1" />
             <div className="overlay">
@@ -33,7 +36,7 @@ function ProjectManhattan() {
 
 function ProjectFishPomodoro() {
     return (
-        <div style={styles.cursorDefault}>
+        <div className="card-style card-hover" style={{...styles.cursorDefault, ...styles.modifyOverflow}}>
             <h3 style={styles.projNum}><span style={styles.projNumSpan}>2.Pomodoro App with Fish-Collecting Gamification</span></h3>
             <div className="timer-emoji">&#x23F1;
                 <p className="fish-emoji-1">&#x1F41F;</p>
@@ -58,7 +61,7 @@ function ProjectFishPomodoro() {
 
 function ProjectStoryGen() {
     return (
-        <div onClick={()=> window.open("https://arxiv.org/abs/2001.10980", "_blank")}>
+        <div className="card-style card-hover" onClick={()=> window.open("https://arxiv.org/abs/2001.10980", "_blank")}>
             <h3 style={styles.projNum}><span style={styles.projNumSpan}>3.Multimodal Story Generation on Plural Images</span></h3>
             <h3>3.Multimodal Story Generation on Plural Images</h3>
             <p className="info-paragraph paper-paragraph">
@@ -79,7 +82,7 @@ function ProjectStoryGen() {
 
 function ProjectCard({proj}) {
     return (
-        <div className="card-style card-hover">
+        <div>
             {proj === "recreate-manhattan" && <ProjectManhattan />}
             {proj === "fish-pomodoro" && <ProjectFishPomodoro />}
             {proj === "story-gen" && <ProjectStoryGen />}

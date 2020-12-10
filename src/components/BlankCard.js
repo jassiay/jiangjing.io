@@ -15,7 +15,6 @@ function BlankCard({twoCol, threeCol, fourCol}) {
         <div className={(twoCol && fourCol)? classNameList.situa1 : 
             (threeCol && fourCol)? classNameList.situa3 : 
             threeCol? classNameList.situa2 : classNameList.situa4}>
-
         </div>
     );
 }

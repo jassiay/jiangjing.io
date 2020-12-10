@@ -44,7 +44,7 @@ function Contact() {
     }, []);
 
     return (
-        <div style={styles.contactItems}>
+        <div className="card-style" style={styles.contactItems}>
             <span style={styles.contactComment}>&lt;!-- <span ref={typeTarget} /> --&gt;</span> <br />
             <p>&lt;Contact&gt;</p>
             <p style={styles.emailLine}>
@@ -59,7 +59,7 @@ function Contact() {
 
 function Resume() {
     return (
-        <div style={styles.resumeCard}>
+        <div className="card-style" style={styles.resumeCard}>
             <a href={resumePDF} target="_blank" className="resume-card">
                 <h1><span>View My</span></h1>
                 <h1><span>RÉSUMÉ</span></h1>
@@ -70,7 +70,7 @@ function Resume() {
 
 function Work() {
     return (
-        <div style={styles.workCard}>
+        <div className="card-style" style={styles.workCard}>
             <h1>Selected</h1>
             <h1>Works</h1>
             <h1>&rarr;</h1>
@@ -80,7 +80,7 @@ function Work() {
 
 function SectionCard({title}) {
     return (
-        <div className="card-style">
+        <div>
             {title === "resume" && <Resume />}
             {title === "work" && <Work />}
             {title === "contact" && <Contact />}
