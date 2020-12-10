@@ -2,6 +2,10 @@ body {
     background-color: #ffffff !important;
 }
 
+a {
+    color: black !important;
+}
+
 .card-style{
     position: relative;
     display: inline-block;
@@ -9,9 +13,9 @@ body {
     height: 75vw;
     margin: 0.5rem;
     background-size: cover;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
-    overflow: hidden;
+    /* overflow: hidden; */
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -20,6 +24,10 @@ body {
 
 .card-blank {
     display: none;
+}
+
+.name-area {
+    background-color: #e0e0e0;
 }
 
 .profile-pic {
@@ -38,17 +46,6 @@ body {
     border-radius: 10px;
 }
 
-.triangle-br {
-    width: 0;
-    height: 0;
-    
-    border-bottom: 80px solid #e1895e;
-    border-left: 80px solid transparent;
-
-    margin-left: 0;
-}
-
-
 .timer-emoji {
     position: absolute;
     margin: auto;
@@ -57,7 +54,7 @@ body {
     top: 0;
     bottom: 0;
     font-size: 10rem;
-    background-color: lightblue;
+    background: linear-gradient(180deg, rgba(94,224,225,1) 0%, rgba(49,82,185,1) 100%);
     height: 15rem;
     width: 15rem;
     border-radius: 50%;
@@ -94,11 +91,9 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    /* padding: 1rem; */
     top: 0;
     z-index: 8;
     border-radius: 10px;
-    color: #000000;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -117,37 +112,19 @@ body {
     padding: 0 1.5rem;
 }
 
-.card-hover .overlay a{
-    position: relative;
-    width: 60%;
-    top: 30vw;
-    padding: 0.5rem 2rem;
-    border: 2px solid #000;
-    text-decoration: none;
-    color:#000;
-    border-radius: 3px;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-}
-
 .card-hover:hover {
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
-    transform: scale(0.95);
+    /* transform: scale(0.95); */
     border-radius: 10px;
     cursor: pointer;
 }
 
-.card-hover:hover .overlay{
-    background: rgba(255, 255, 255, 0.6);
-}
-.card-hover:hover h3, .card-hover:hover p{
-    opacity: 1;
+.card-hover:hover .more-detail{
+    background: rgba(255, 255, 255, 0.5);
 }
 
-.card-hover:hover a{
-    top: 0px;
+.card-hover:hover h3, .card-hover:hover p{
+    opacity: 1;
 }
 
 .resume-card:hover {
@@ -186,7 +163,7 @@ body {
 
 .project-link:hover {
     cursor: pointer;
-    background: #e0e0e0;
+    background: #e1895e;
 }
 
 .title-placeholder {
@@ -196,6 +173,7 @@ body {
 
 .paper-paragraph {
     padding: 0 1.5rem;
+    z-index: 9;
 }
 
 .info-paragraph {

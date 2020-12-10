@@ -33,8 +33,8 @@ function App() {
       </Row>
       {/* Contact Row */}
       <Row className="d-flex justify-content-center">
-          <SectionCard title="contact" />
           <SectionCard title="resume" />
+          <SectionCard title="contact" />
           <BlankCard threeCol fourCol />
           <BlankCard fourCol />
       </Row>

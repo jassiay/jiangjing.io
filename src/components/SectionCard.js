@@ -7,13 +7,9 @@ import resumePDF from '../assets/Resume Jing Jiang.pdf';
 const styles = {
     resumeCard: {
         fontFamily: `'DM Serif Display', serif`,
-        textAlign: 'center'
     },
     workCard: {
         textAlign: 'left',
-    },
-    workCardH1: {
-        marginLeft: 80,
     },
     contactItems: {
         fontFamily: `'Inconsolata', serif`,
@@ -33,7 +29,7 @@ function Contact() {
 
     useEffect(() => {
         const typed = new Typed(typeTarget.current, {
-            strings: ["Reach me out by:"],
+            strings: ["Reach me out by"],
             typeSpeed: 80,
             backSpeed: 50,
             showCursor: false,
@@ -65,8 +61,7 @@ function Resume() {
     return (
         <div style={styles.resumeCard}>
             <a href={resumePDF} target="_blank" className="resume-card">
-                <h1><span>View</span></h1>
-                <h1><span>My</span></h1>
+                <h1><span>View My</span></h1>
                 <h1><span>RÉSUMÉ</span></h1>
             </a>
         </div>
@@ -76,10 +71,9 @@ function Resume() {
 function Work() {
     return (
         <div style={styles.workCard}>
-            <div className="triangle-br"></div>
-            <h1 style={styles.workCardH1}>Selected</h1>
-            <h1 style={styles.workCardH1}>Works</h1>
-            <h1 style={styles.workCardH1}>&rarr;</h1>
+            <h1>Selected</h1>
+            <h1>Works</h1>
+            <h1>&rarr;</h1>
         </div>
     );
 }

@@ -4,9 +4,6 @@ import '../styles.css';
 import profilePic from '../assets/profile_pic.png';
 
 const styles = {
-    nameArea: {
-        backgroundColor: '#e0e0e0',
-    },
     modifyOverflow: {
         overflow: 'visible'
     }
@@ -15,7 +12,7 @@ const styles = {
 function PrimaryCard() {
     return (
         <div className="card-style" style={styles.modifyOverflow}>
-            <div style={styles.nameArea}>
+            <div className="name-area">
                 <h1>JING</h1>
                 <h1>JIANG</h1>
             </div>

@@ -25,21 +25,6 @@ function ProjectManhattan() {
             <h3 style={styles.projNum}><span>1.Recreate-Manhattan: Reimagine a City using Deep Learning</span></h3>
             <img className="project-img" src={project1} alt="Project 1" />
             <div className="overlay">
-                <h3 className="title-placeholder">1.Recreate-Manhattan: Reimagine a City using Deep Learning</h3>
-                <p className="info-paragraph">
-                    Curated a dataset consisting of 400 trios of images containing outline, layout, and depth information of the city blocks
-                    in Manhattan.
-                </p>
-                <p className="info-paragraph">
-                    Used the city block depth dataset as ground truth and trained a Pix2Pix Generative Adversarial Networks model that
-                    can generate new depth maps given customized block layout inputs.
-                    Applied this model on various geometric styles to convey innovative concepts of modern architecture and city
-                    planning.
-                </p>
-                <p className="info-paragraph project-link" onClick={()=> window.open("https://recreate-manhattan.jiangjing.io/", "_blank")}>
-                    Visit <br />
-                    <b>https://recreate-manhattan.jiangjing.io/</b>
-                </p>
             </div>
             
         </div>
@@ -56,16 +41,15 @@ function ProjectFishPomodoro() {
             </div>
             <div className="overlay">                
                 <h3 className="title-placeholder">2.Pomodoro App with Fish-Collecting Gamification</h3>
-                <p className="info-paragraph">
+                <p className="info-paragraph more-detail">
                 Following Agile Development approaches, developed a smartphone application that features Pomodoro studying
                 techniques, with gamification that enables users to collect animated fish as rewards when they finish studying cycles.
-                </p>
-                <p className="info-paragraph">
+                <br />
                 Used React Native as framework, together with Expo. Used Google Firebase for user authentication and database.
-                </p>
-                <p className="info-paragraph project-link" onClick={()=> window.open("https://tempo-873ec.web.app/", "_blank")}>
-                    Prototype deployed on <br />
-                    <b>https://tempo-873ec.web.app/</b>
+                <br />
+                Prototype deployed on:
+                <br />
+                <b className="project-link" onClick={()=> window.open("https://tempo-873ec.web.app/", "_blank")}>https://tempo-873ec.web.app/</b>
                 </p>
             </div>
         </div>
@@ -75,8 +59,7 @@ function ProjectFishPomodoro() {
 function ProjectStoryGen() {
     return (
         <div onClick={()=> window.open("https://arxiv.org/abs/2001.10980", "_blank")}>
-            {/* <h3 style={styles.projNum}><span style={styles.projNumSpan}>3.</span></h3> */}
-            {/* <img className="project-3-img" src={project3} alt="Project 3" /> */}
+            <h3 style={styles.projNum}><span style={styles.projNumSpan}>3.Multimodal Story Generation on Plural Images</span></h3>
             <h3>3.Multimodal Story Generation on Plural Images</h3>
             <p className="info-paragraph paper-paragraph">
                 <span style={styles.abstract}>Abstract&nbsp;</span>Traditionally, the text generation models take in a sequence of text as input, and iteratively generate
