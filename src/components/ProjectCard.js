@@ -72,7 +72,7 @@ function ProjectStoryGen() {
                 multiple images. The output samples from the model demonstrate the ability to generate meaningful
                 paragraphs of text containing the extracted features from the input images.
             </p>
-            <p className="info-paragraph project-link paper-paragraph" onClick={()=> window.open("https://arxiv.org/abs/2001.10980", "_blank")}>
+            <p className="info-paragraph project-link paper-paragraph">
                 Report on this project available on: <br />
                 <b>https://arxiv.org/abs/2001.10980</b>
             </p>

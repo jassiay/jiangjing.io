@@ -1,9 +1,15 @@
 import React from 'react';
 import '../styles.css';
 
+const styles = {
+    modifyOverflow: {
+        overflow: 'visible'
+    }
+};
+
 function About() {
     return (
-        <div className="card-style">
+        <div className="card-style" style={styles.modifyOverflow}>
             <p className="info-paragraph">
                 Hello! I currently live in Evanston, IL. 
             </p>
