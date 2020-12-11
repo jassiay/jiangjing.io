@@ -62,7 +62,6 @@ function ProjectFishPomodoro() {
 function ProjectStoryGen() {
     return (
         <div className="card-style card-hover" onClick={()=> window.open("https://arxiv.org/abs/2001.10980", "_blank")}>
-            <h3 style={styles.projNum}><span style={styles.projNumSpan}>3.Multimodal Story Generation on Plural Images</span></h3>
             <h3>3.Multimodal Story Generation on Plural Images</h3>
             <p className="info-paragraph paper-paragraph">
                 <span style={styles.abstract}>Abstract&nbsp;</span>Traditionally, the text generation models take in a sequence of text as input, and iteratively generate
